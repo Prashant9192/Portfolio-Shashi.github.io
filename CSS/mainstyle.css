@@ -1,0 +1,575 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500;600;700&display=swap');
+
+
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color:  #FF6e06;
+    --secondary-color:  #020202;
+    --font-color: #ffffff;
+    --hove-color: #FFFFFF17;
+    --one-more-color: #3B3B3B;    
+}
+
+/* html {
+    font-size: 62.5%;
+} */
+body{
+    font-family: 'Expletus Sans', cursive;
+    margin: 0;
+    color: var(--font-color);
+    background-image: url("Pexels Videos 2324166.Mp4");
+    background-color: var(--secondary-color);
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+
+/*           NAVBAR             */
+
+/* HEADER */
+#header{
+    background-color: var(--primary-color); 
+    padding: 0.5rem 0 0 0 ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#header ::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* nav-div in the header*/
+
+#nav-div{
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom:  0 ;
+    height: 3.5rem;
+}
+
+/* nav-p in the nav-div*/
+#nav-p{
+    float: left;
+    padding: 0 0 0.2rem 0;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--font-color); 
+}
+
+/* nav-menu in the nav-div */
+#nav-menu{
+    float: right;
+    font-weight: bolder;
+}
+
+/* in the nav-menu */
+#nav-menu ul{
+    margin: 0rem;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+/* in the nav-menu */
+#nav-menu li{
+    display: inline-block;
+    margin-left: 4.5rem;
+    padding-top: 0rem; 
+    font-size: 1.6rem;
+    position: relative;
+}
+
+/* in the nav-menu li */
+#nav-menu a{
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+#nav-menu a:hover{
+    color: var(--secondary-color);
+}
+
+#nav-menu a::before{
+    content: '';
+    display: block;
+    height: 0.5rem;
+    width: 0%;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 3rem;
+    transition: all ease-in-out 200ms;
+}
+
+#nav-menu a:hover::before{
+    width: 100%;
+}
+
+.menu{
+    display: none;
+    cursor: pointer;
+    padding: 0 1rem;
+}
+
+.bar{
+    display: block;
+    width: 5rem;
+    height: 0.5rem;
+    margin: 1rem auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--font-color);
+}
+
+/*------section---in---body------*/
+
+#main-sec {
+    padding: 15rem 15rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+
+/*                  Introdution or Home            */
+/* intro div */
+#intro-div {
+    width: auto;
+    position: relative;
+    
+    display: flex;
+    justify-content: flex-start;
+    padding:  0 0;
+    margin: 0;
+}
+
+/* in the intro div */
+.p-div {
+    padding: 0 0 0 8rem;
+}
+
+.hello-h3{
+    color: var(--primary-color);
+    margin: 0;
+    padding-top: 10rem;
+    font-size: 3rem;
+}
+
+
+.hello-h1{
+    margin: 0;
+    padding-top: 0.2rem;
+    font-size: 7.5rem;
+}
+
+.about-butt {
+    background-color: var(--primary-color);
+    border: 0.1rem solid var(--primary-color);
+    border-radius: 2rem;
+    margin-top: 0.2rem;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0 0 0;
+    cursor: pointer;
+    color: var(--font-color)
+}
+
+.about-butt:hover {
+    color: var(--secondary-color);
+}
+
+
+.img-div {
+    padding: 0 8rem 0 0 ;
+    
+}
+
+.img-div img {
+    width: 40rem;
+    border-radius: 20rem;
+    box-shadow: 0rem 0rem 1rem 0rem var(--secondary-color);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    background-color: var(--primary-color);
+}
+
+/*----------personal----details-----*/
+
+
+#h112 {
+    font-size: 2rem;
+}
+#under-intro {
+    position: relative;
+    margin:  0;
+    padding:  0;
+}
+#sec-PD {
+    display: flex ;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    border: 0.2rem solid var(--font-color);
+}
+
+
+#div-img2{
+    padding: 0 6rem 0 0rem;
+    margin: 0 ;
+    width: 40%;
+}
+.image-2{
+    width: 40rem;
+    margin: 0 0 -0.4rem 0;
+}
+
+
+#about-me{
+    padding: 6rem 0 0 6rem;
+    width: 55%;
+    display: block;
+}
+
+#about-me h1 {
+    font-size: 6rem;
+    margin: 0 0 2rem 0;
+}
+
+#about-me p {
+    font-size: 2.5rem;
+}
+
+#about-me a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+.two-butt {
+    background-color: var(--primary-color);
+    border: 0.1rem solid var(--primary-color);
+    border-radius: 2rem;
+    margin-top: 0.2rem;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin: 2rem 0 0 0;
+    color: var(--font-color);
+}
+
+.two-butt:hover {
+    color: var(--secondary-color);
+}
+
+.CV {
+    padding: 0.5rem 2rem;
+    margin: 0 2rem 0 0;
+}
+
+.CV a{
+    color: var(--secondary-color);
+}
+.CV i {
+    width: 2.5rem;
+}
+
+/*-----skills and eduction--------*/
+
+
+#h122 {
+    font-size: 2rem;
+    margin: 2rem 0 0 0;
+}
+
+#sec-EnS {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+}
+
+#EnS-div{
+    background: var(--one-more-color);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+  
+.div-box {
+    background: var(--one-more-color);
+    width: 50%;
+    font-size: 2rem;
+    padding: 1.5rem 2.5rem;
+}
+  
+.div-box #div1 {
+    background: var(--hove-color);
+    height: 60rem;
+}
+
+.div-box #div2 {
+    background: var(--hove-color);
+    height: 60rem;
+}
+
+.ul-in-div {
+    padding: 1rem 0 0 0;
+}
+
+.ul-in-ul {
+    list-style: none;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+}
+
+.ul-padd{
+    padding: 1.5rem 0 1.1rem 0;
+}
+::marker {
+    color: var(--primary-color);
+    size: 1.5rem;
+}
+  
+.progress-bar {
+    background: var(--font-color);
+    width: 100%;
+    height: 1rem;
+    border-radius: 0.5rem;
+}
+
+.progress-bar div {
+    width: 0;
+    height: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+}
+
+.BAR1 {
+    animation: BAR1 1s  linear forwards ;
+}
+
+@keyframes BAR1 {
+    100% {
+        width: 80%;
+    }
+}
+
+.BAR2 {
+    animation: BAR2 1s linear forwards;
+}
+
+@keyframes BAR2 {
+    100% {
+        width: 50%;
+    }
+}
+
+.BAR3 {
+    animation: BAR3 1s linear forwards;
+}
+
+@keyframes BAR3 {
+    100% {
+        width: 70%;
+    }
+}
+
+.BAR4 {
+    animation: BAR4 1s linear forwards;
+}
+
+@keyframes BAR4 {
+    100% {
+        width: 70%;
+    }
+}
+
+.BAR5 {
+    animation: BAR5 1s linear forwards;
+}
+
+@keyframes BAR5 {
+    100% {
+        width: 60%;
+    }
+}
+
+.progress-bar div  span {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    color: var(--primary-color);
+    background-color: var(--font-color);
+    float: right;
+    font-size: 1.2rem;
+    margin: -1rem -2rem 0 0;
+    font-weight: bolder;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+
+/*----------------footer--------------*/
+
+footer{
+    background-color: var(--secondary-color);
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+
+.two-divs {
+    padding: 1rem;
+}
+/*------contact me--------*/
+
+#C-M {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.contact-me {
+    margin: 0 17rem;
+}
+
+
+.contact-me i {
+    padding: 0 0.5rem 0 0;
+}
+
+.C-me {
+    padding: 0 0 1rem 0;
+}
+
+.SM-div i {
+    padding: 0 1rem 0 0;
+    font-size: 3.5rem;
+}
+
+.contact-me button {
+    color: var(--font-color);
+    background-color: var(--primary-color);
+    border: 0.1rem solid var(--secondary-color);
+    border-radius: 2rem;
+    margin: 1.5rem 0;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1rem 1rem;
+    cursor: pointer;
+}
+
+
+
+.contact-me p {
+    padding: 0 0 1rem 0;
+    font-size: 2rem;
+}
+/*-------message-------*/
+.message {
+    margin: 5.5rem 0 0 0;
+    font-size: 2rem;
+}
+
+
+.em-column {
+    margin: 0.8rem 0 0 0;
+    width: 35rem;
+}
+
+.form-control {
+    display: block;
+    width: 150%;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6;
+    border: 0.2rem solid var(--secondary-color);
+    background: var(--hove-color);
+    color: var(--font-color);
+}
+
+
+.submit-butt {
+    color: var(--font-color);
+    background-color: var(--primary-color);
+    border: 0.1rem solid var(--secondary-color);
+    border-radius: 2rem;
+    margin: 1rem 0;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    width: 10rem;
+}
+
+
+
+
+/*------copyright and developed by --------*/
+#C-d {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    height: 3.5rem;
+    background: var(--hove-color);
+    padding: 2rem 0 3rem 0;
+    font-size: 2rem;
+}
+
+#C-d a:hover {
+    color: gray;
+}
+
+.Db {
+    margin: 0;
+    padding: 0 0.5rem 0 0;
+}
+
+.CR {
+    margin: 0;
+    padding: 0 ;
+}
+
+
+
+
+
+
+

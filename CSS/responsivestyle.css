@@ -1,0 +1,414 @@
+:root {
+    --primary-color:  #FF6e06;
+    --secondary-color:  #020202;
+    --font-color: #ffffff;
+    --hove-color: #FFFFFF17;
+    --one-more-color: #3B3B3B;    
+}
+
+
+
+
+
+
+/*----For mobile screen --------*/
+@media only screen and (min-width:320px) and (max-width:425px) {
+
+
+    html {
+        font-size: 45%;
+    }
+    
+
+    
+    .menu{
+        display: block;
+    }
+
+    .menu.active .bar:nth-last-child(2){
+        opacity: 0;
+    }
+    .menu.active .bar:nth-last-child(1){
+        opacity: 0;
+    }
+    .menu.active .bar:nth-last-child(3){
+        opacity: 0;
+    }
+    /*
+    .menu.active .bar:nth-last-child(1){
+        transform: translate(8px) rotate(45deg);
+    }
+    .menu.active .bar:nth-last-child(3){
+        transform: translate(-8px) rotate(-45deg);
+    }*/
+/*   #55d6aa */
+
+
+
+    #header {
+        padding: 0;
+    }
+
+
+    #nav-div {
+        margin: 0;
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+
+    #nav-menu ul{
+        position: fixed;
+        top: 7rem;
+        left: -100%;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--primary-color) ;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        margin: 0;
+    }
+
+    #nav-menu li{
+        margin: 1.6rem 0;
+    }
+
+    #nav-menu ul.active{
+        left: 0;
+        top: 5rem;
+    }
+
+
+
+    /*-----------header------------*/
+
+    #nav-p {
+        font-size: 4rem;
+    }
+
+    #nav-menu li {
+        font-size: 3rem;
+    }
+
+    /* main  */
+    #main-sec {
+        padding: 10rem 1rem ;
+    }
+    /*intro dib*/
+
+    #intro-div {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    #intro-div div {
+        padding: 0;
+    }
+    .about-butt {
+        font-size: 3rem;
+        border-radius: 3rem;
+    }
+
+    
+    /*#under-intro*/
+/* 
+    #under-intro {
+        padding: 5rem;
+    } */
+    #sec-PD {
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+ 
+    #div-img2 {
+        display: none;
+        /* padding: 0;
+        width: auto; */
+    }
+
+    #about-me {
+        padding: 5rem;
+        width: auto;
+    } 
+
+    .two-butt {
+        font-size: 3rem;
+        border-radius: 3rem;
+    }
+    #about-me h1 {
+        font-size: 6.4rem;
+        margin: 2rem 0 0 0;
+    }
+
+
+    /*--------skills and education ---------*/
+    #EnS-div {
+        flex-direction: column;
+    }
+
+    .div-box {
+        width: 100%;
+    }
+    /*----------footer--------------*/
+    #C-M {
+        flex-direction: column;
+        font-size: 3rem;
+    }
+
+    .two-divs {
+        padding: 0;
+    }
+
+    footer .contact-me a {
+        font-size: 3rem;
+    }
+
+    .contact-me {
+        margin: 0;
+    }
+
+    .contact-me button {
+        border-radius: 3rem;
+    }
+
+    .message {
+        width:100%;
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;
+        align-content: center;
+        align-items: flex-start;
+        padding: 0 0 0 7rem;
+    }
+
+    .em-column {
+        width: 160%;
+    }
+    .form-control {
+        width: 100%;
+    }
+
+    .submit-butt {
+        width: 50%;
+        font-size: 2.6rem;
+        border-radius: 3rem;
+    }
+
+
+
+
+
+
+}
+
+
+   
+
+
+
+/*---For tablet screen -------*/
+/* completed */
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+    html {
+        font-size: 55%;
+    }
+
+    /* Main tag for the page  */
+    #main-sec {
+        padding: 6rem 0.5rem;
+    }
+
+    /* intro div in main  */
+    #intro-div {
+        justify-content: center;
+        padding: 0 0 0 7rem;
+    }
+
+    .img-div {
+        padding: 7rem 0 0 0;
+    }
+
+    .img-div img {
+        width: 30rem;
+    }
+
+    .p-div {
+        margin: 0 2rem 0 3rem;
+        padding: 0;
+    }
+
+    .hello-h1 {
+        font-size: 7rem;
+    }
+
+    .about-butt {
+        border-radius: 3rem;
+        font-size: 3rem;
+        padding: 1rem;
+    }
+    /* second page under intro div  */
+    #under-intro {
+        padding: 0 1rem;
+    }
+
+
+    .image-2 {
+        width: 37rem;
+        height: 55rem;
+    }
+
+    #about-me {
+        padding: 4rem 0 0 6rem;
+    }
+
+    #about-me h1 {
+        margin: 0 0 1rem 0;
+    }
+
+    .two-butt {
+        font-size: 3rem;
+        border-radius: 3rem;
+    }
+
+    /* education and skils page  */
+    #sec-EnS {
+        padding: 0 1rem;
+    }
+
+    .div-box #div1 {
+    height: 65rem;
+    }
+
+    .div-box #div2 {
+        height: 65rem;
+    }
+    /*---------footer-------------
+    -------------contact--us---------*/
+     #C-M {
+        overflow-x: hidden;
+     }
+
+     .contact-me {
+        margin: 0px 5rem;
+    }
+    .em-column {
+        margin: 0.8rem 0 0 0;
+        width: 26rem;
+    }
+}
+
+
+
+
+/*---For laptop  screen -------*/
+
+@media only screen and (min-width:1024px) and (max-width:1440px){
+    html {
+        font-size: 62.5%;
+    }
+    
+    
+}
+
+
+
+
+/*---For destop screen -------*/
+/*-----Completed the desktop screen*/
+
+@media only screen and (min-width:1441px) {
+    html {
+        font-size: 100%;
+    }
+    
+    
+/*------section---in---body------*/
+
+#main-sec {
+    padding: 10rem;
+}
+
+
+/* in the intro div */
+.img-div {
+    padding: 0 6rem 0 0;
+}
+.img-div img {
+    width: 35rem;
+}
+
+.p-div {
+    padding: 0;
+}
+
+.hello-h3 {
+    font-size: 2.5rem;
+}
+
+
+/*----------personal----details-----*/
+
+#h112 {
+    font-size: 1.2rem;
+}
+
+#about-me {
+    padding: 3rem 0 0 6rem;
+}
+
+
+#about-me h1 {
+    font-size: 4rem;
+    margin:0;
+}
+
+.image-2 {
+    width: 35.6rem;
+}
+
+.CV {
+    margin: 0 2rem 1rem 0;
+}
+
+
+/*-----skills and eduction--------*/
+
+#h122 {
+    font-size: 0.5rem;
+}
+
+.div-box{
+font-size: 1.5rem;
+}
+
+.div-box #div1 {
+    height: 48rem;
+}
+
+
+.div-box #div2 {
+    height: 48rem;
+}
+
+
+/*------footer------*/
+
+.contact-me {
+    margin: 0px 7.5rem;
+}
+
+
+#C-M {
+    font-size: 2rem;
+}
+
+#C-d {
+    font-size: 1.5rem;
+}
+
+}
