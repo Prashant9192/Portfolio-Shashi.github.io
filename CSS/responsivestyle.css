@@ -168,18 +168,17 @@
     }
 
     .contact-me {
-        margin: 0;
+        margin: 0 5rem;
+
     }
 
     .contact-me button {
         border-radius: 3rem;
     }
 
-    
     .messageBox {
         width: 100%;
     }
-    
     .message {
         width:100%;
         display: flex;
@@ -417,3 +416,4 @@ font-size: 1.5rem;
 }
 
 }
+
