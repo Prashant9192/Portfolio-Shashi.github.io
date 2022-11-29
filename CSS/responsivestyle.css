@@ -164,7 +164,7 @@
     }
 
     footer .contact-me a {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
     .contact-me {
@@ -173,7 +173,7 @@
     }
 
     .contact-me button {
-        border-radius: 2.8rem;
+        border-radius: 3rem;
     }
 
     .messageBox {
@@ -416,3 +416,4 @@ font-size: 1.5rem;
 
 }
 
+/*0ok*/
